@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import FSButton from './FSButton.js';
-import AddPlayer from './AddPlayer.js';
-import ListPlayers from './ListPlayers.js';
+import FSButton from './addPlayers/FSButton.js';
+import AddPlayer from './addPlayers/AddPlayer.js';
+import ListPlayers from './addPlayers/ListPlayers.js';
 
 class Gameview extends Component {
 
@@ -14,6 +14,8 @@ startGameAction() {
 }
 
   render() {
+    // Create logic for returning appropriate view depending on state of the
+    // game flow
     return (
       <div className="Gameview">
         <FSButton id="resetPlayers" value="Poista pelaajat" action={this.resetPlayersAction} />

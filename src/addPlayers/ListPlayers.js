@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PlayerService from './PlayerService.js';
+import PlayerService from '../commonServices/PlayerService.js';
 
 class ListPlayers extends Component {
 

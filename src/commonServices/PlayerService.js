@@ -22,7 +22,8 @@ class PlayerService{
 
   getPlayers() {
     console.log('PlayerService getPlayers called');
-    fetch('http://localhost:8080/test')  // http://fribastar.ddns.net:8080/fribaStar/test getPlayers
+    //fetch('http://localhost:8080/test')  // http://fribastar.ddns.net:8080/fribaStar/test getPlayers
+    fetch('http://localhost:8080/getPlayers')  // http://fribastar.ddns.net:8080/fribaStar/test getPlayers
     .then(function(response) {
       return response.text()
     }).then(function(json) {
